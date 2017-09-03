@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E5ADFB7-3FB4-4D47-B309-E456ECC277A7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cody.FacePP.Api</RootNamespace>
+    <AssemblyName>facepp-dotnet-sdk</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\facepp-dotnet-sdk.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FaceSet\AddFaceToFaceSetRequest.cs" />
+    <Compile Include="FaceSet\AddFaceToFaceSetResponse.cs" />
+    <Compile Include="FaceSet\CreateFaceSetRequest.cs" />
+    <Compile Include="FaceSet\CreateFaceSetResponse.cs" />
+    <Compile Include="FaceSet\DeleteFaceSetRequest.cs" />
+    <Compile Include="FaceSet\DeleteFaceSetResponse.cs" />
+    <Compile Include="Entity\FaceSet.cs" />
+    <Compile Include="FaceSet\GetAllFaceSetsRequest.cs" />
+    <Compile Include="FaceSet\GetAllFaceSetsResponse.cs" />
+    <Compile Include="FaceSet\GetFaceSetDetailRequest.cs" />
+    <Compile Include="FaceSet\GetFaceSetDetailResponse.cs" />
+    <Compile Include="FaceSet\RemoveFaceFromFaceSetRequest.cs" />
+    <Compile Include="FaceSet\RemoveFaceFromFaceSetResponse.cs" />
+    <Compile Include="FaceSet\UpdateFaceSetRequest.cs" />
+    <Compile Include="FaceSet\UpdateFaceSetResponse.cs" />
+    <Compile Include="Face\FaceCompareRequest.cs" />
+    <Compile Include="Face\FaceCompareResponse.cs" />
+    <Compile Include="Face\FaceDetectRequest.cs" />
+    <Compile Include="Face\FaceDetectResponse.cs" />
+    <Compile Include="Entity\Face.cs" />
+    <Compile Include="Face\FaceSearchRequest.cs" />
+    <Compile Include="Face\FaceSearchResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\facepp-dotnet-core\facepp-dotnet-core.csproj">
+      <Project>{a464f4af-eef3-4ccb-8f23-e8f0f0309420}</Project>
+      <Name>facepp-dotnet-core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
