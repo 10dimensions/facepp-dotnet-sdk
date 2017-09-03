@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "facepp-dotnet-sdk", "facepp-dotnet-sdk.csproj", "{4E5ADFB7-3FB4-4D47-B309-E456ECC277A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "facepp-dotnet-sdk", "facepp-dotnet-sdk\facepp-dotnet-sdk.csproj", "{4E5ADFB7-3FB4-4D47-B309-E456ECC277A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "facepp-dotnet-core", "..\facepp-dotnet-core\facepp-dotnet-core.csproj", "{A464F4AF-EEF3-4CCB-8F23-E8F0F0309420}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "facepp-dotnet-core", "facepp-dotnet-core\facepp-dotnet-core.csproj", "{A464F4AF-EEF3-4CCB-8F23-E8F0F0309420}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "examples", "..\examples\examples.csproj", "{F9C3C907-5BF0-48FE-A6AC-DD1A99C6D230}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "examples", "examples\examples.csproj", "{F9C3C907-5BF0-48FE-A6AC-DD1A99C6D230}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
