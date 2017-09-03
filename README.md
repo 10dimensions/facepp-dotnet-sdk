@@ -7,6 +7,10 @@ Install-Package FacePlusPlus
 
 # example
 ```c#
+using Cody.FacePP.Core;
+using Cody.FacePP.Api;
+using Cody.FacePP.Api.FaceSet;
+
 var profile = new DefaultProfile
 {
     APIKey = "****",
