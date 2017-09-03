@@ -1,6 +1,11 @@
 # facepp-dotnet-sdk
 .NET SDK for face++ api
 
+```
+Install-Package FacePlusPlus
+```
+
+# example
 ```c#
 var profile = new DefaultProfile
 {
