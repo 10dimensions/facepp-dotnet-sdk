@@ -27,7 +27,7 @@ namespace Cody.FacePP.Api.FaceSet
         /// </summary>
         public bool IsCheckEmpty { get; set; } = true;
 
-        public override string ApiUrl => string.Format("{0}/faceset/delete", this.ApiBaseUrl);
+        public override string ApiUrl => string.Format("{0}/facepp/v3/faceset/delete", this.ApiBaseUrl);
 
         public override string QueryString
         {

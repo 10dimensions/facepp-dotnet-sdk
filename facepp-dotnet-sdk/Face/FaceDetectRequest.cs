@@ -26,7 +26,7 @@ namespace Cody.FacePP.Api.Face
         /// </summary>
         public string ImageBase64String { get; set; }
 
-        private Dictionary<int, string> _attributes = typeof(AttributesType).ToDictionary();
+        private static Dictionary<int, string> _attributes = typeof(AttributesType).ToDictionary();
 
         public override string QueryString
         {
@@ -104,7 +104,7 @@ namespace Cody.FacePP.Api.Face
         {
             get
             {
-                return string.Format("{0}/detect", this.ApiBaseUrl);
+                return string.Format("{0}/facepp/v3/detect", this.ApiBaseUrl);
 
                 //if (this.QueryBytes != null)
                 //    url = string.Format("{0}?{1}", url, string.Join("&", BuildQuery().Select(p => string.Format("{0}={1}", p.Key, p.Value))));

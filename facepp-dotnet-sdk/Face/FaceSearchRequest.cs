@@ -120,7 +120,7 @@ namespace Cody.FacePP.Api.Face
         {
             get
             {
-                return string.Format("{0}/search", this.ApiBaseUrl);
+                return string.Format("{0}/facepp/v3/search", this.ApiBaseUrl);
             }
         }
 

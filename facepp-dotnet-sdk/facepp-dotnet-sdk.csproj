@@ -45,6 +45,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\Attributes.cs" />
+    <Compile Include="Entity\Beauty.cs" />
+    <Compile Include="Entity\BodyClothColor.cs" />
+    <Compile Include="Entity\Coord.cs" />
+    <Compile Include="Entity\Emotion.cs" />
+    <Compile Include="Entity\EyeGaze.cs" />
+    <Compile Include="Entity\EyeGazeItem.cs" />
+    <Compile Include="Entity\EyeStatus.cs" />
+    <Compile Include="Entity\EyeStatusResult.cs" />
+    <Compile Include="Entity\FaceRectangle.cs" />
+    <Compile Include="Entity\Gesture.cs" />
+    <Compile Include="Entity\Hand.cs" />
+    <Compile Include="Entity\HandRectangle.cs" />
+    <Compile Include="Entity\HeadPose.cs" />
+    <Compile Include="Entity\HumanBody.cs" />
+    <Compile Include="Entity\HumanBodyAttributes.cs" />
+    <Compile Include="Entity\HumanBodyRectangle.cs" />
+    <Compile Include="Entity\HumanGender.cs" />
+    <Compile Include="Entity\LandMark.cs" />
+    <Compile Include="Entity\MouthStatus.cs" />
+    <Compile Include="Entity\RectangleBase.cs" />
     <Compile Include="FaceSet\AddFaceToFaceSetRequest.cs" />
     <Compile Include="FaceSet\AddFaceToFaceSetResponse.cs" />
     <Compile Include="FaceSet\CreateFaceSetRequest.cs" />
@@ -60,13 +81,25 @@
     <Compile Include="FaceSet\RemoveFaceFromFaceSetResponse.cs" />
     <Compile Include="FaceSet\UpdateFaceSetRequest.cs" />
     <Compile Include="FaceSet\UpdateFaceSetResponse.cs" />
+    <Compile Include="Face\FaceAnalyzeRequest.cs" />
+    <Compile Include="Face\FaceAnalyzeResponse.cs" />
     <Compile Include="Face\FaceCompareRequest.cs" />
     <Compile Include="Face\FaceCompareResponse.cs" />
     <Compile Include="Face\FaceDetectRequest.cs" />
     <Compile Include="Face\FaceDetectResponse.cs" />
     <Compile Include="Entity\Face.cs" />
+    <Compile Include="Face\FaceGetDetailRequest.cs" />
+    <Compile Include="Face\FaceGetDetailResponse.cs" />
     <Compile Include="Face\FaceSearchRequest.cs" />
     <Compile Include="Face\FaceSearchResponse.cs" />
+    <Compile Include="Face\FaceSetUserIdRequest.cs" />
+    <Compile Include="Face\FaceSetUserIdResponse.cs" />
+    <Compile Include="HumanBody\GestureDetectRequest.cs" />
+    <Compile Include="HumanBody\GestureDetectResponse.cs" />
+    <Compile Include="HumanBody\HumanBodyDetectRequest.cs" />
+    <Compile Include="HumanBody\HumanBodyDetectResponse.cs" />
+    <Compile Include="HumanBody\HumanBodySegmentRequest.cs" />
+    <Compile Include="HumanBody\HumanBodySegmentResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

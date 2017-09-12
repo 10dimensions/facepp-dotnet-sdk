@@ -73,7 +73,7 @@ namespace Cody.FacePP.Api.Face
         {
             get
             {
-                return string.Format("{0}/compare", this.ApiBaseUrl);
+                return string.Format("{0}/facepp/v3/compare", this.ApiBaseUrl);
             }
         }
 

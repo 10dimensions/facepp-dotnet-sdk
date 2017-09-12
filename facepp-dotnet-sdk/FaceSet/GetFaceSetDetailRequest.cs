@@ -32,7 +32,7 @@ namespace Cody.FacePP.Api.FaceSet
         /// </summary>
         public string StartToken { get; set; }
 
-        public override string ApiUrl => string.Format("{0}/faceset/getdetail", this.ApiBaseUrl);
+        public override string ApiUrl => string.Format("{0}/facepp/v3/faceset/getdetail", this.ApiBaseUrl);
 
         public override string QueryString
         {

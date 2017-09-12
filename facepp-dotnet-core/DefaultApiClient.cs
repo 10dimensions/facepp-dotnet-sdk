@@ -15,7 +15,7 @@ namespace Cody.FacePP.Core
     {
         private IProfile _profile = null;
 
-        public string ApiBaseUrl { get; set; } = "https://api-cn.faceplusplus.com/facepp/v3";
+        public string ApiBaseUrl { get; set; } = "https://api-cn.faceplusplus.com";
 
         /// <summary>
         /// 

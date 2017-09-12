@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "facepp-dotnet-core", "facep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "examples", "examples\examples.csproj", "{F9C3C907-5BF0-48FE-A6AC-DD1A99C6D230}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMS", "FMS\FMS.csproj", "{53610EDC-C2EC-473D-8414-D78F0D980004}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F9C3C907-5BF0-48FE-A6AC-DD1A99C6D230}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9C3C907-5BF0-48FE-A6AC-DD1A99C6D230}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9C3C907-5BF0-48FE-A6AC-DD1A99C6D230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53610EDC-C2EC-473D-8414-D78F0D980004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53610EDC-C2EC-473D-8414-D78F0D980004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53610EDC-C2EC-473D-8414-D78F0D980004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53610EDC-C2EC-473D-8414-D78F0D980004}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

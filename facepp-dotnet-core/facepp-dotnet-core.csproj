@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attribute\ColorDescriptionAttribute.cs" />
     <Compile Include="Attribute\EnumDescriptionAttribute.cs" />
     <Compile Include="Attribute\IgnoreExtraParasAttribute.cs" />
     <Compile Include="Attribute\ParaSignAttribute.cs" />
@@ -53,11 +54,13 @@
     <Compile Include="DefaultProfile.cs" />
     <Compile Include="DefaultApiClient.cs" />
     <Compile Include="Enum\AttributesType.cs" />
+    <Compile Include="Enum\ClothColor.cs" />
     <Compile Include="Enum\ContentType.cs" />
     <Compile Include="Enum\Emotion.cs" />
     <Compile Include="Enum\Ethnicity.cs" />
     <Compile Include="Enum\Gender.cs" />
     <Compile Include="Enum\HttpMethod.cs" />
+    <Compile Include="Enum\HumanBodyAttributes.cs" />
     <Compile Include="Enum\ResponseType.cs" />
     <Compile Include="Helper\EnumHelper.cs" />
     <Compile Include="Helper\FileHelper.cs" />

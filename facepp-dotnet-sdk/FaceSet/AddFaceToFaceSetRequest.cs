@@ -26,7 +26,7 @@ namespace Cody.FacePP.Api.FaceSet
         /// </summary>
         public List<string> FaceTokens { get; set; }
 
-        public override string ApiUrl => string.Format("{0}/faceset/addface", this.ApiBaseUrl);
+        public override string ApiUrl => string.Format("{0}/facepp/v3/faceset/addface", this.ApiBaseUrl);
 
         public override string QueryString
         {

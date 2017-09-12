@@ -11,13 +11,17 @@ namespace examples
         {
             var profile = new DefaultProfile
             {
-                APIKey = "****",
-                APISecret = "****"
+                APIKey = "",
+                APISecret = ""
             };
             var client = new DefaultApiClient(profile);
 
-            //IExample detect = new FaceDetectExample();
-            //detect.Run(client);
+            System.Diagnostics.Stopwatch sw = new System.Diagnostics.Stopwatch();
+            sw.Start();
+            IExample detect = new FaceDetectExample();
+            detect.Run(client);
+            sw.Stop();
+            Console.WriteLine(sw.ElapsedMilliseconds + " ms");
 
             //IExample compare = new FaceCompareExample();
             //compare.Run(client);
@@ -28,12 +32,12 @@ namespace examples
             //};
             //var response = client.GetResponse(request);
 
-            var request = new AddFaceToFaceSetRequest
-            {
-                FaceSetToken = "c50c0ef5c877b1184fc2899c54721226",
-                FaceTokens = new System.Collections.Generic.List<string>() { "043111b20a7d6b29498991c8ff4071f0" },
-            };
-            var response = client.GetResponse(request);
+            //var request = new AddFaceToFaceSetRequest
+            //{
+            //    FaceSetToken = "c50c0ef5c877b1184fc2899c54721226",
+            //    FaceTokens = new System.Collections.Generic.List<string>() { "043111b20a7d6b29498991c8ff4071f0" },
+            //};
+            //var response = client.GetResponse(request);
 
             Console.ReadLine();
         }

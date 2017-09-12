@@ -82,7 +82,7 @@ namespace Cody.FacePP.Api.FaceSet
         {
             get
             {
-                return string.Format("{0}/faceset/update", this.ApiBaseUrl);
+                return string.Format("{0}/facepp/v3/faceset/update", this.ApiBaseUrl);
             }
         }
     }

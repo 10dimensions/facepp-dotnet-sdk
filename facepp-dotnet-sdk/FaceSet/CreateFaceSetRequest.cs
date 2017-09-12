@@ -89,7 +89,7 @@ namespace Cody.FacePP.Api.FaceSet
         {
             get
             {
-                return string.Format("{0}/faceset/create", this.ApiBaseUrl);
+                return string.Format("{0}/facepp/v3/faceset/create", this.ApiBaseUrl);
             }
         }
     }

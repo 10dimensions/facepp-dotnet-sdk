@@ -31,7 +31,7 @@ namespace Cody.FacePP.Api.FaceSet
         /// </summary>
         public bool IsRemoveAll { get; set; } = false;
 
-        public override string ApiUrl => string.Format("{0}/faceset/removeface", this.ApiBaseUrl);
+        public override string ApiUrl => string.Format("{0}/facepp/v3/faceset/removeface", this.ApiBaseUrl);
 
         public override string QueryString
         {
